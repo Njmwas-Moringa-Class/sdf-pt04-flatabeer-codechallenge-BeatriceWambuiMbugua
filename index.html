@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Urbanist:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script defer type="text/javascript" src="src/index.js"></script>
+
+    <title>Flatabeer</title>
+  </head>
+  <body>
+    <!-- header -->
+
+    <header class="header">
+      <h1>Flatabeer</h1>
+      <!-- Navlist -->
+      <nav>
+        <ul id="beer-list">
+          <li>Beer Name</li>
+          <li>Another Beer Name</li>
+          <li>And Another Beer Name</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <div class="beer-details">
+        <div class="beer-section">
+          <div class="beer-detail">
+            <h2 id="beer-name">Beer Name Goes Here</h2>
+            <img
+              id="beer-image"
+              alt="Beer Name Goes Here"
+              src="/assets/image-placeholder.jpg"
+            />
+            <h3>Beer Description</h3>
+            <p><em id="beer-description">Description Goes Here</em></p>
+          </div>
+
+          <div>
+            <!-- Form -->
+            <form id="description-form" class="form">
+              <label for="description">Edit Beer Description:</label>
+              <textarea id="description" name="description"></textarea>
+              <button type="submit" class="btn">Update Beer</button>
+            </form>
+          </div>
+        </div>
+        <div class="beer-section">
+          <div class="beer-detail">
+            <!-- Customer Reviews -->
+            <h3>Customer Reviews</h3>
+            <ul id="customer-reviews" class="customer-reviews">
+              <li>Replace with actual reviews</li>
+              <li>From the server</li>
+            </ul>
+          </div>
+          <div>
+            <!-- customer Reviews form -->
+            <form id="review-form" class="form">
+              <label for="review">Your Review:</label>
+              <textarea id="review" name="review"></textarea>
+              <button type="submit" class="btn">Add review</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
